@@ -30,6 +30,7 @@ p {
 }
 
 .nav{
+    /* position: relative = ficar na area que foi colocada*/
     position: relative;
 }
 
@@ -61,4 +62,79 @@ p {
 .nav-items li a:hover{
     color: #ccc;
 
+}
+
+.default-btn{
+    padding: 15px 20px;
+    background-color: #2CC76A;
+    border-radius: 5px;
+    color: #fff;
+}
+.default-btn:hover{
+    background-color: #22BB5f;
+    color: #fff;
+}
+
+/*para adicionar img de plano de fundo*/
+.main-banner{
+    background-image: url('../img/mainbanner.png');
+    padding: 10em 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.main-banner h1, .main-banner p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p{
+    font-size: 32px;
+}
+
+/* especialidades */
+
+.specialties-container {
+    padding: 5em 0;
+}
+
+.specialties-container ul{
+    display: flex;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.specialties-container ul li{
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px; = flex: 1 1 200px; */
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+    color: #2CC76A;
+}
+
+.fa-rocket{
+    color: #EF3F29;
+}
+
+.fa-comments{
+    color: #EF8F29;
 }
